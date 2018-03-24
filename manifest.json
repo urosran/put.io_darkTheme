@@ -1,0 +1,19 @@
+{
+	"manifest_version": 2,
+	"name": "Put.io-DarkTheme",
+	"version": "0.1",
+	"browser_action": {"default_popup": "popup.html"	},
+	"permissions":
+   [
+      "tabs",
+      "notifications",
+      "http://*/*",
+      "https://*/*"
+   ],
+	"content_scripts": [
+		{
+			"matches": ["https://app.put.io/*"],
+			"js": ["popup.js"]
+		}
+	]
+}
